@@ -1,0 +1,10 @@
+1.BUG: Wrong synchronous barrier cause wrong outputs
+- 删除line=600\625的BARRIER(global->barrier_rank, number_of_pocessors);
+- 参数
+```c
+#define DEFAULT_P                    2    //线程的数目
+#define DEFAULT_N                    4    //排序的数字的数目
+#define DEFAULT_R                    2     //基数的数目
+#define DEFAULT_M                    8    //排序的数字的最大值
+```
+- 已测试
